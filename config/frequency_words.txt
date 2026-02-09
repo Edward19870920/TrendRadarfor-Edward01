@@ -180,9 +180,20 @@
 /\bOpenAI\b|\bChatGPT\b|\bSora\b|\bDALL-E\b|\bSam Altman\b|\bGreg Brockman\b/ => OpenAI
 /\bAnthropic\b|\bClaude\b|\bDario Amodei\b/ => Claude
 
-# 互金行业监控
-/(360数科|360金融|360金融科技|\b360\b|奇富科技|奇富|Qifu|Qifu Technology|小赢科技|小赢|Xiaoying|Xiaoying Technology|乐信|Lexin|LexinFintech|嘉银金科|嘉银|Jiayin|Jiayin Gold|信也科技|信也|FinVolution|度小满|度小满金融|Du Xiaoman|Du Xiaoman Financial|蚂蚁金服|蚂蚁集团|Ant Group|Ant Financial|井贤栋|胡晓明|字节金融|字节跳动金融|ByteDance Financial|京东金融|京东数科|JD Finance|JD Digits|美团金融|Meituan Financial|数禾科技|Shuhe Technology|微财|微财科技|Weicai|马上消金|马上消费金融|马上金融|Msxf|MSXF)/i => 互金公司
-@10
+/奇富科技|360数科|360金融|360借条|\bQifu\b|\b360\s?DigiTech\b|\b360\s?Finance\b|\bQFIN\b/ => 奇富科技
+/信也科技|拍拍贷|\bFinVolution\b|\bPaipai\s?Dai\b|\bFINV\b/ => 信也科技
+/乐信|分期乐|\bLexin\b|\bFenqile\b|\bLX\b/ => 乐信
+/小赢科技|小赢卡贷|\bX\s?Financial\b|\bXiaoying\b|\bXYF\b/ => 小赢科技
+/嘉银|嘉银金科|你我贷|极融|\bJiayin\b|\bNiwo\s?Dai\b|\bJFIN\b/ => 嘉银科技
+/马上消费|马上金融|安逸花|\bMashang\b|\bAnyihua\b|\bMSCF\b/ => 马上消费
+/度小满|百度金融|有钱花|\bDu\s?Xiaoman\b|\bBaidu\s?Finance\b|\bUmoney\b/ => 度小满
+/蚂蚁集团|蚂蚁金服|支付宝|花呗|借呗|余额宝|\bAnt\s?Group\b|\bAnt\s?Financial\b|\bAlipay\b|\bHuabei\b|\bJiebei\b/ => 蚂蚁集团
+/美团金融|美团月付|美团借钱|美团生活费|\bMeituan\s?Finance\b/ => 美团金融
+/字节金融|抖音金融|放心借|抖音月付|抖音支付|\bDouyin\s?Pay\b|\bByteDance\s?Finance\b/ => 字节金融
+/京东金融|京东科技|京东数科|京东白条|京东金条|\bJD\s?Finance\b|\bJD\s?Technology\b|\bJD\s?Digits\b|\bJD\s?Baitiao\b/ => 京东金融
+/洋钱罐|瓴岳科技|\bYangqianguan\b|\bFintopia\b/ => 洋钱罐
+/信用飞|\bXinyongfei\b|\bCredit\s?Fly\b/ => 信用飞
+
 
 # ═══════════════════════════════════════════════════════════════
 #                         国家与地区
@@ -194,12 +205,10 @@
 
 [东亚]
 日本
-韩国
 
 [北美]
 美国
 加拿大
-墨西哥
 
 # ═══════════════════════════════════════════════════════════════
 #                         科技领域
@@ -214,22 +223,6 @@
 光刻机
 半导体
 
-/自动驾驶|无人驾驶|智驾/ => 自动驾驶
-
-机器人
-/机械狗|四足/ => 机器狗
-具身智能
-
-/月球|登月|火星|宇宙|飞船|航天|空间站|卫星/ => 航天
-
-# 前沿科技
-量子
-脑机
-基因
-
-# 产业政策
-生产力
-
 A股
 上证
 深证
@@ -240,3 +233,7 @@ A股
 欧洲杯
 亚洲杯
 +比赛
+
+/互联网金融|金融科技|数字金融|普惠金融|消费金融|消金|助贷|联合贷|小贷|网络小贷|信用贷|现金贷|分期|\bFinTech\b|\bConsumer\s?Finance\b|\bInclusive\s?Finance\b/ => 互金行业
+/征信|个人征信|百行征信|信用评分|大数据风控|智能风控|反欺诈|逾期|坏账|不良率|入催率|回款率|贷后管理|催收|\bCredit\s?Score\b|\bRisk\s?Control\b|\bNPL\b|\bDelinquency\b/ => 风控与指标
+/金融监管|银保监|金管局|整改|合规|持牌|牌照|断直连|年化利率|单利|IRR|反垄断|个人信息保护|\bNFRA\b|\bCompliance\b|\bLicense\b/ => 监管合规
